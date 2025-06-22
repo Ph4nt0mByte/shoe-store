@@ -54,8 +54,7 @@ html {
 }
 .nav-right {
     display: flex;
-    gap: 30px;
-    align-items: center;
+
 }
 
 .nav-right a {
@@ -68,6 +67,13 @@ html {
     transition: opacity 0.3s ease;
     display: inline-flex;
     align-items: center;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 20px; /* Space between navigation links and cart icon */
 }
 .cart-icon {
     font-size: 24px;
@@ -721,19 +727,5 @@ html {
     .form-group textarea {
         max-width: 100%;
         box-sizing: border-box;
-    }
-}
-
-/* Always show cart icon on mobile, position it top right */
-@media (max-width: 768px) {
-    .cart-icon {
-        display: flex !important;
-        position: absolute;
-        top: 18px;
-        right: 18px;
-        z-index: 30;
-        background: rgba(0,0,0,0.7);
-        border-radius: 50%;
-        padding: 8px;
     }
 }
