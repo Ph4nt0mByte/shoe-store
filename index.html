@@ -19,13 +19,26 @@
         <div class="navigation">
             <ul>
                 <li><a href="#">Products</a></li>
-                <li><a href="#">Featured</a></li>
+                <li><a href="#featured-section">Featured</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
             <div class="nav-right">
-                <a href="#">Contacts</a>
+                <a href="#contact-section">Contacts</a>
                 <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
             </div>
+            <div class="hamburger" onclick="toggleMenu()">
+              <i class="fas fa-bars"></i>
+          </div>
+          <div class="mobile-menu" id="mobileMenu">
+              <span class="close-btn" onclick="toggleMenu()"><i class="fas fa-times"></i></span>
+              <ul>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#featured-section">Featured</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#contact-section">Contact</a></li>
+              </ul>
+          </div>
+          
         </div>
         <div class="left-text">
             <h1>EVERY STEP</h1>
@@ -34,7 +47,7 @@
             <h1>EVERY STYLE</h1>
         </div>
       </section>
-      <section class="featured">
+      <section class="featured" id="featured-section">
         <div class="featured-header"> 
             <h2>Featured Collection</h2>
         </div>
@@ -82,7 +95,7 @@
             </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact-section">
         <div class="contact-container">
           <div class="contact-info">
             <h2>Contact Us</h2>
